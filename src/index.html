@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Using Tailwind</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap" rel="preload" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+    <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation Menu -->
+  <div class="navigation fixed bottom-0 w-full flex justify-center items-center rounded-t-lg shadow-lg">
+        <div class="navigation relative h-16 bg-primary flex justify-center items-center rounded-lg">
+          <ul class="flex w-[350px] justify-between">
+            <li class="list relative list-none w-16 h-16 flex justify-center items-center z-10 active">
+              <a href="#home" class="relative flex flex-col items-center justify-center w-full text-center font-medium">
+                <span class="icon block text-2xl transition duration-500 text-gray-800">
+                  <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text absolute text-gray-800 font-normal text-xs tracking-wider transition duration-500 opacity-0 translate-y-5">Home</span>
+              </a>
+            </li>
+            <li class="list relative list-none w-16 h-16 flex justify-center items-center z-10">
+              <a href="#about" class="relative flex flex-col items-center justify-center w-full text-center font-medium">
+                <span class="icon block text-2xl transition duration-500 text-gray-800">
+                  <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text absolute text-gray-800 font-normal text-xs tracking-wider transition duration-500 opacity-0 translate-y-5">About</span>
+              </a>
+            </li>
+            <li class="list relative list-none w-16 h-16 flex justify-center items-center z-10">
+              <a href="#education" class="relative flex flex-col items-center justify-center w-full text-center font-medium">
+                <span class="icon block text-2xl transition duration-500 text-gray-800">
+                  <ion-icon name="school-outline"></ion-icon>
+                </span>
+                <span class="text absolute text-gray-800 font-normal text-xs tracking-wider transition duration-500 opacity-0 translate-y-5">Education</span>
+              </a>
+            </li>
+            <li class="list relative list-none w-16 h-16 flex justify-center items-center z-10">
+              <a href="#portfolio" class="relative flex flex-col items-center justify-center w-full text-center font-medium">
+                <span class="icon block text-2xl transition duration-500 text-gray-800">
+                  <ion-icon name="book-outline"></ion-icon>
+                </span>
+                <span class="text absolute text-gray-800 font-normal text-xs tracking-wider transition duration-500 opacity-0 translate-y-5">Portfolio</span>
+              </a>
+            </li>
+            <li class="list relative list-none w-16 h-16 flex justify-center items-center z-10">
+              <a href="#contact" class="relative flex flex-col items-center justify-center w-full text-center font-medium">
+                <span class="icon block text-2xl transition duration-500 text-gray-800">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                <span class="text absolute text-gray-800 font-normal text-xs tracking-wider transition duration-500 opacity-0 translate-y-5">Contact</span>
+              </a>
+            </li>
+            <div class="indicator absolute top-[-50%] w-16 h-16 bg-violet rounded-full border-[6px] border-[white] transition duration-500"></div>
+          </ul>
+        </div>
+      </div>
+
+
+
+<!-- Home Container -->
+<div class="flex flex-col items-center justify-center py-24 md:py-[200px] lg:flex-row" id="home">
+  <div class="rounded-full border-8 border-primary shadow-xl">
+    <img src="./assets/sam.jpg" class="h-48 rounded-full sm:h-56" alt="author" />
+  </div>
+  <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+    <h1 class="text-center font-header text-4xl text-primary sm:text-left sm:text-5xl md:text-6xl">
+      Hello! I'm Mark Samuel Bandiola
+    </h1>
+    </div>
+  </div>
+
+
+<!-- About Container -->
+      <div class="flex justify-center items-center py-16 md:py-[200px]" id="about">
+        <div class="container flex flex-col lg:flex-row">
+          <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+            <h2
+              class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+            >
+              Hi! I'm Sam
+            </h2>
+            <h4
+              class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+            >
+              Aspiring Graphic Designer
+            </h4>
+            <p class="pt-6 font-body leading-relaxed text-grey-20">
+                Hi, I’m Mark Samuel, a 22-year-old aspiring graphic designer currently in my third year of a BSIT program at Gordon College. 
+                Born on August 5, 2002, I have a deep passion for graphic design and a strong interest in playing musical instruments such as the guitar, 
+                drums, and piano. Balancing my academic life with my creative hobbies, I enjoy exploring new design ideas and integrating my musical 
+                creativity into my projects.
+            </p>
+            <div
+              class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
+            >
+              <div class="flex items-center justify-center sm:justify-start">
+                <p class="font-body text-lg font-semibold uppercase text-grey-20">
+                  Connect with me
+                </p>
+                <div class="hidden sm:block">
+                  <i class="bx bx-chevron-right text-2xl text-primary"></i>
+                </div>
+              </div>
+              <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                <a href="/">
+                  <i class="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
+                </a>
+                <a href="/" class="pl-4">
+                  <i class="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
+                </a>
+                <a href="/" class="pl-4">
+                  <i class="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
+                </a>
+                <a href="/" class="pl-4">
+                  <i class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
+                </a>
+                <a href="/" class="pl-4">
+                  <i class="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
+                </a>
+              </div>              
+            </div>
+          </div>
+          <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+            <div>
+              <div class="flex items-end justify-between">
+                <h4 class="font-body font-semibold uppercase text-black">
+                  HTML & CSS
+                </h4>
+                <h3 class="font-body text-3xl font-bold text-primary">90%</h3>
+              </div>
+              <div class="mt-2 h-3 w-full rounded-full bg-violet">
+                <div class="h-3 rounded-full bg-primary" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-end justify-between">
+                <h4 class="font-body font-semibold uppercase text-black">
+                  Javascript
+                </h4>
+                <h3 class="font-body text-3xl font-bold text-primary">40%</h3>
+              </div>
+              <div class="mt-2 h-3 w-full rounded-full bg-violet">
+                <div class="h-3 rounded-full bg-primary" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="pt-6">
+              <div class="flex items-end justify-between">
+                <h4 class="font-body font-semibold uppercase text-black">Figma</h4>
+                <h3 class="font-body text-3xl font-bold text-primary">91%</h3>
+              </div>
+              <div class="mt-2 h-3 w-full rounded-full bg-violet">
+                <div class="h-3 rounded-full bg-primary" style="width: 91%"></div>
+              </div>
+            </div>
+            <div class="pt-6">
+                <div class="flex items-end justify-between">
+                  <h4 class="font-body font-semibold uppercase text-black">Angular</h4>
+                  <h3 class="font-body text-3xl font-bold text-primary">70%</h3>
+                </div>
+                <div class="mt-2 h-3 w-full rounded-full bg-violet">
+                  <div class="h-3 rounded-full bg-primary" style="width: 70%"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+<!-- Education Container -->
+<div class="flex justify-center items-center" id="education">
+  <div class="container py-16 md:py-20">
+    <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">Education Experience</h2>
+    <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+      <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+      <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+        <div class="md:w-2/5">
+          <div class="flex justify-center md:justify-start">
+            <span class="shrink-0 text-2xl"> Elementary </span>
+            <div class="relative ml-3 hidden w-full md:block">
+              <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-3/5">
+          <div class="relative flex md:pl-18">
+            <!-- <span class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span> -->
+            <div class="mt-1 flex">
+              <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+              <div class="md:-mt-1 md:pl-8">
+                <span class="block font-body font-bold text-grey-40">2008-2014</span>
+                <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Highway Hills Integrated School</span>
+                <div class="pt-2">
+                  <span class="block font-body text-black">H2JX+WQW, Calbayog St, Mandaluyong, 1550 Metro Manila</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+        <div class="md:w-2/5">
+          <div class="flex justify-center md:justify-start">
+            <span class="shrink-0 text-2xl"> Senior High School
+            </span>
+            <div class="relative ml-3 hidden w-full md:block">
+              <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-3/5">
+          <div class="relative flex md:pl-18">
+            <!-- <span class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span> -->
+  
+            <div class="mt-1 flex">
+              <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+              <div class="md:-mt-1 md:pl-8">
+                <span class="block font-body font-bold text-grey-40">2018-2020</span>
+                <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Arellano University</span>
+                <div class="pt-2">
+                  <span class="block font-body text-black">53 Gen. Kalentong St., Mandaluyong City</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+        <div class="md:w-2/5">
+          <div class="flex justify-center md:justify-start">
+            <span class="shrink-0 text-2xl">
+              College            
+            </span>
+            <div class="relative ml-3 hidden w-full md:block">
+              <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-3/5">
+          <div class="relative flex md:pl-18">
+            <!-- <span class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span> -->
+  
+            <div class="mt-1 flex">
+              <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+              <div class="md:-mt-1 md:pl-8">
+                <span class="block font-body font-bold text-grey-40">2022 and present</span>
+                <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Gordon College</span>
+                <div class="pt-2">
+                  <span class="block font-body text-black">Olongapo City Sports Complex, Gordon College,Philippine, Lungsod ng Olongapo, Zambales</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Portfolio Container -->
+<div class="flex justify-center items-center py-16" id="portfolio">
+  <div class="container">
+    <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+      Check out my Portfolio
+    </h2>
+    <br>
+    <div class="mx-auto grid w-full grid-cols-1 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+      <a href="/" class="relative mx-auto transform transition-all hover:scale-105 md:mx-0 flex items-center justify-center">
+        <div class="aspect-w-16 aspect-h-10 max-w-md overflow-hidden portfolio-item">
+          <img src="./assets/portfolio1.png" class="object-cover w-full h-full shadow" alt="portfolio image" />
+        </div>
+      </a>
+      <a href="/" class="relative mx-auto transform transition-all hover:scale-105 md:mx-0 flex items-center justify-center">
+        <div class="aspect-w-16 aspect-h-10 max-w-md overflow-hidden portfolio-item">
+          <img src="./assets/portfolio2.png" class="object-cover w-full h-full shadow" alt="portfolio image" />
+        </div>
+      </a>
+      <a href="/" class="relative mx-auto transform transition-all hover:scale-105 md:mx-0 flex items-center justify-center">
+        <div class="aspect-w-16 aspect-h-10 max-w-md overflow-hidden portfolio-item">
+          <img src="./assets/portfolio3.png" class="object-cover w-full h-full shadow" alt="portfolio image" />
+        </div>
+      </a>
+      <a href="/" class="relative mx-auto transform transition-all hover:scale-105 md:mx-0 flex items-center justify-center">
+        <div class="aspect-w-16 aspect-h-10 max-w-md overflow-hidden portfolio-item">
+          <img src="./assets/portfolio4.png" class="object-cover w-full h-full shadow" alt="portfolio image" />
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Settings Container -->
+<div class="flex justify-center items-center h-screen bg-purple-100" id="contact">
+  <div class="container flex flex-col items-center py-16 md:py-20">
+      
+    <div class="footer-container">
+      <div class="footer-content">
+          <h1 class="text-2xl">Contact Me</h1>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer-info">
+              <p>&copy; 2024 Mark Samuel. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+          <script src="./script.js"></script>
+          
+</body>
+</html>

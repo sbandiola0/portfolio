@@ -1,0 +1,21 @@
+{
+  "name": "bandiola_mark_samuel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-reload": "browser-sync start --config './browser-sync-config.js'",
+    "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
+    "build": "npm run css -- --env 'production'",
+    "format": "npx prettier ./**/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.44",
+    "tailwindcss": "^3.4.10"
+  }
+}
